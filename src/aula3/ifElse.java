@@ -14,9 +14,10 @@ public class ifElse {
         double somaNotas = (nota1+nota2+nota3)/3;
 
         if (somaNotas < 4){
-            IO.println("Você foi reprovado ");
+            IO.println("Você foi reprovado "+ somaNotas);
             return;
         }
+
         if (somaNotas <= 6) {
             IO.println("Você está de recuperação");
             return;

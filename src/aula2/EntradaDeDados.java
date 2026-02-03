@@ -26,11 +26,17 @@ public class EntradaDeDados {
         IO.println("Seu imc é: " + imc);
 
         if (imc <18){
-            IO.println("Seu peso esta abaixo do normal");
-        } else if (imc > 18.5 && imc <25){
-            IO.println("Seu peso é normal");
-        } else if (imc >25){
-            IO.println("Seu peso esta acima normal");
+            IO.println(nome +" Seu peso esta abaixo do normal");
+        } else if (imc > 18.5 && imc <24.9){
+            IO.println(nome +" Seu peso é normal");
+        } else if (imc >= 25 && imc <29.9){
+            IO.println(nome +" Seu peso esta acima normal, Sobrepeso");
+        } else if(imc >= 30 && imc <= 34.9){
+            IO.println(nome +" Obesidade grau 1");
+        } else if(imc >= 35 && imc <= 39.9){
+            IO.println(nome +" Obesidade grau 2");
+        } else if(imc >= 40){
+            IO.println(nome +" Obesidade grau 3");
         }else{
             IO.println("Peso desconhecido");
         }
