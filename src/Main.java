@@ -1,7 +1,9 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-    Carro carro = new Carro("BMW",100);
-    IO.println(carro);
-    IO.println(carro.acelerar());
+public class Main {
+    public static void main(String[] args) {
+    Celular celular= new Celular();
+    celular.qualidadeCamera();
+    celular.som();
+    }
 }
